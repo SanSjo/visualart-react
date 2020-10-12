@@ -2,7 +2,7 @@ import React from 'react';
 import data from './components/advdata.json'
 import img from './assets/blabar.png'
 import splash from './assets/splash.svg'
-import './style.css';
+import './style/style.css';
 
 
 

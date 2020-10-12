@@ -271,7 +271,7 @@ section {
 }
 
 .titlePink {
-    background-image:  linear-gradient(to right, #f8b9d4, #f8b9d4), url("../src/assets/maner.png");
+    background-image:  linear-gradient(to right, #f8b9d4, #f8b9d4), url("../assets/maner.png");
     font-family: 'ICARubrikBold';
     height: 200px;
     background-repeat: none;
@@ -285,7 +285,7 @@ section {
 }
 
 .title {
-    background-image:  url("../src/assets/maner.png");
+    background-image:  url("../assets/maner.png");
     font-family: 'ICARubrikBold';
     height: 200px;
     background-repeat: none;
@@ -386,292 +386,105 @@ g {
   font-size: 20px;
 }
 
-.animated {
-   
-    animation: 
-      pulse 3s ease infinite alternate, 
-      nudge 5s linear infinite alternate,
- 
-      slide-right ease 3s both;
-     
-
-
- }
-
- .element {
-    height: 400px;
-
-    background-color: red;
-    animation: 
-      pulse 3s ease normal;
-     
-
-    animation-fill-mode: forwards;
-   
-  }
-  
- 
-  @-webkit-keyframes slide-right {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    50% {
-      
-      -webkit-transform: translateX(20%);
-      transform:  translateX(20%);
-     
-          
-  }
-    55% {
-      
-      -webkit-transform: translateX(20%);
-      transform:  rotate(-10deg) translateX(20%);
-     
-          
-  }
-    
-   60%
-    {
-      -webkit-transform: translateX(18%);
-      transform:  rotate(20deg) translateX(18%);
-    }
-    70%
-    {
-      -webkit-transform: translateX(20%);
-      transform:  rotate(-20deg) translateX(20%);
-    }
-    80%
-    {
-      -webkit-transform: translateX(18%);
-      transform: rotate(20deg) translateX(18%);
-    }
-    90%
-    {
-      -webkit-transform: translateX(20%);
-      transform: translateX(20%);
-    }
-   
-    100% {
-      
-        -webkit-transform: translateX(20%);
-        transform: translateX(20%);
-       
-            
-    }
-  }
-  @keyframes slide-right {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    50% {
-      
-      -webkit-transform: translateX(10%);
-      transform:  translateX(10%);
-     
-          
-  }
-    55% {
-      
-      -webkit-transform: translateX(10%);
-      transform:  rotate(-10deg) translateX(10%);
-     
-          
-  }
-    
-   60%
-    {
-      -webkit-transform: translateX(8%);
-      transform:  rotate(10deg) translateX(8%);
-    }
-    70%
-    {
-      -webkit-transform: translateX(10%);
-      transform:  rotate(-10deg) translateX(10%);
-    }
-    80%
-    {
-      -webkit-transform: translateX(8%);
-      transform: rotate(10deg) translateX(8%);
-    }
-    90%
-    {
-      -webkit-transform: translateX(10%);
-      transform: translateX(10%);
-    }
-   
-    100% {
-      
-        -webkit-transform: translateX(10%);
-        transform: translateX(10%);
-       
-            
-    }
-  }
-
-  /* @-webkit-keyframes swing
-{
-    15%
-    {
-        -webkit-transform: translateX(500px);
-        transform: translateX(500px);
-    }
-    30%
-    {
-        -webkit-transform: translateX(-500px);
-       transform: translateX(-500px);
-    } 
-    50%
-    {
-        -webkit-transform: translateX(300px);
-        transform: translateX(300px);
-    }
-    65%
-    {
-        -webkit-transform: translateX(-300px);
-        transform: translateX(-300px);
-    }
-    80%
-    {
-        -webkit-transform: translateX(200px);
-        transform: translateX(200px);
-    }
-    100%
-    {
-
-        -webkit-transform: translateX(500px);
-        transform: translateX(500px);
-    }
+.animated { 
+  animation: 
+    slide-right ease 3s both;
 }
-@keyframes swing
-{
-    
- from
-  {
-      -webkit-transform: translateX(40%);
-      transform: translateX(40%);
+
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
+  50% {  
+    -webkit-transform: translateX(10%);
+    transform:  translateX(10%);      
+  }
+  55% {
+    -webkit-transform: translateX(10%);
+    transform:  rotate(-10deg) translateX(10%);       
+  } 
   60%
   {
-    -webkit-transform: translateX(5px);
-    transform: translateX(5px);
+    -webkit-transform: translateX(8%);
+    transform:  rotate(10deg) translateX(8%);
   }
-    70%
-    {
-      -webkit-transform: translateX(-5px);
-      transform: translateX(-5px);
-    }
-    80%
-    {
-      -webkit-transform: translateX(5px);
-      transform: translateX(5px);
-    }
-    90%
-    {
-      -webkit-transform: translateX(-5px);
-      transform: translateX(-5px);
-    }
-   to
-    {
-        -webkit-transform: translateX(500px);
-        transform: translateX(500px);
-    }
-    
-} */
- 
- 
- 
-  @-webkit-keyframes swing-left {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(-100px);
-              transform: translateX(-100px);
-    }
+  70%
+  {
+    -webkit-transform: translateX(10%);
+    transform:  rotate(-10deg) translateX(10%);
   }
-  @keyframes swing-left {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-   
-    100% {
-      -webkit-transform: translateX(-100px);
-              transform: translateX(-100px);
-    }
+  80%
+  {
+    -webkit-transform: translateX(8%);
+    transform: rotate(10deg) translateX(8%);
   }
-
-  @-webkit-keyframes swing-right {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(100px);
-              transform: translateX(100px);
-    }
+  90%
+  {
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%);
   }
-  @keyframes swing-right {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(100px);
-              transform: translateX(100px);
-    }
+  100% { 
+      -webkit-transform: translateX(10%);
+      transform: translateX(10%);        
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {  
+    -webkit-transform: translateX(10%);
+    transform:  translateX(10%);      
+  }
+  55% {
+    -webkit-transform: translateX(10%);
+    transform:  rotate(-10deg) translateX(10%);       
   } 
-
-   @-webkit-keyframes slide-out-right {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: translateX(1000px);
-              transform: translateX(1000px);
-      opacity: 0;
-    }
+  60%
+  {
+    -webkit-transform: translateX(8%);
+    transform:  rotate(10deg) translateX(8%);
   }
-  @keyframes slide-out-right {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
-   
-    100% {
-      -webkit-transform: translateX(800px);
-              transform: translateX(800px);
-      opacity: 0;
-    }
-  } 
-  
-  
- 
-
-
+  70%
+  {
+    -webkit-transform: translateX(10%);
+    transform:  rotate(-10deg) translateX(10%);
+  }
+  80%
+  {
+    -webkit-transform: translateX(8%);
+    transform: rotate(10deg) translateX(8%);
+  }
+  90%
+  {
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%);
+  }
+  100% { 
+      -webkit-transform: translateX(10%);
+      transform: translateX(10%);        
+  }
+}
 
 
 @font-face {
     font-family: 'ICARubrikSiffror';
-    src: local('ICARubrikSiffror'), url(./fonts/icarubriksiffror-webfont.woff) format('woff');
+    src: local('ICARubrikSiffror'), url(../fonts/icarubriksiffror-webfont.woff) format('woff');
   }
 @font-face {
     font-family: 'ICAText';
-    src: local('ICAText'), url(./fonts/icatext-black-webfont.woff) format('woff');
+    src: local('ICAText'), url(../fonts/icatext-black-webfont.woff) format('woff');
   }
 @font-face {
     font-family: 'ICARubrikBold';
-    src: local('ICARubrikBold'), url(./fonts/ICARubrikBold.woff) format('woff');
+    src: local('ICARubrikBold'), url(../fonts/ICARubrikBold.woff) format('woff');
   }
 @font-face {
     font-family: 'ICAWebTextRegular';
-    src: local('ICAWebTextRegular'), url(./fonts/ICATextWebRegular.woff) format('woff');
+    src: local('ICAWebTextRegular'), url(../fonts/ICATextWebRegular.woff) format('woff');
   } 
 
 
