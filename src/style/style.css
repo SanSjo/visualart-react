@@ -83,13 +83,11 @@ g {
 
 .price {
     font-size: 120px;
-    font-family: 'ICARubrikSiffror';
-   
+    font-family: 'ICARubrikSiffror'; 
 }
 
 
 #ica-nara-splash {
-
     fill: #f8b9d4;
 }
 
@@ -113,10 +111,6 @@ g {
     font-family: 'ICAText';
     font-size: 20px;
 
-}
-
-.adTitleContainer {
- 
 }
 
 .adTitle {
