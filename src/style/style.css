@@ -13,7 +13,7 @@ section {
 }
 
 .titlePink {
-    background-image:  linear-gradient(to right, #f8b9d4, #f8b9d4), url("../assets/maner.png");
+    background:#f8b9d4;
     font-family: 'ICARubrikBold';
     height: 200px;
     background-repeat: none;
@@ -23,6 +23,7 @@ section {
     align-items: center;
     width: 600px;
     font-size: 60px;
+
   
 }
 
@@ -36,11 +37,6 @@ section {
     justify-content: center;
     align-items: center;
 
-
-}
-
-.title::after {
-  background-color: #f8b9d4;
 
 }
 
